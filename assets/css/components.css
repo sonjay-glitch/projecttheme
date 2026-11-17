@@ -39,3 +39,96 @@
 .projecttheme-image-slider .carousel-item img {
   object-fit: cover;
 }
+
+/*** About Punk ***/
+
+.about-punk {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "title image"
+    "intro image"
+    "tagline image"
+    "text image";
+  align-items: center;
+  column-gap: clamp(2rem, 6vw, 6rem);
+  row-gap: 1rem;
+}
+
+.about-punk__title {
+  grid-area: title;
+  margin: 0;
+  font-family: "Punk Kid", sans-serif;
+  font-size: clamp(4rem, 9vw, 9rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.about-punk__image {
+  grid-area: image;
+}
+
+.about-punk__image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2.4 / 1;
+  object-fit: cover;
+}
+
+.about-punk__intro,
+.about-punk__text {
+  font-family: "Special Elite Regular", serif;
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  line-height: 1.35;
+}
+
+.about-punk__intro {
+  grid-area: intro;
+  text-align: center;
+}
+
+.about-punk__tagline {
+  grid-area: tagline;
+  margin: 0;
+  color: var(--theme-color-primary);
+  font-family: "Dystopian Canticle Regular", serif;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  line-height: 1.15;
+  text-align: center;
+}
+
+.about-punk__text {
+  grid-area: text;
+}
+
+@media (max-width: 767px) {
+  .about-punk {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "visual"
+      "intro"
+      "tagline"
+      "text";
+    row-gap: 1rem;
+    text-align: center;
+  }
+
+  .about-punk__title,
+  .about-punk__image {
+    grid-area: visual;
+  }
+
+  .about-punk__title {
+    z-index: 1;
+    align-self: start;
+    justify-self: center;
+    margin-top: -0.15em;
+    font-size: clamp(2.5rem, 12vw, 4.5rem);
+  }
+
+  .about-punk__intro,
+  .about-punk__text {
+    font-size: 0.95rem;
+  }
+}
