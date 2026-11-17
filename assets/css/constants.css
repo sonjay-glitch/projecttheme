@@ -1,0 +1,23 @@
+/*
+ * Constants
+ *
+ * Keep colors and reusable theme values here.
+ */
+:root {
+  --theme-color-primary: #FBC1D6;
+  --theme-color-secondary: #1f2020;
+  --theme-color-tertiary: #DBAC84;
+  --theme-color-accent: #FBC1D6;
+  --theme-color-accent-2: #DBAC84;
+  --theme-color-body: #2C2C2C;
+
+  --sds-color-background-default-default: #2C2C2C; 
+  --sds-color-text-default-default: #FFFFFF;
+  --sds-color-text-brand-on-brand: #DBAC84;
+  --sds-color-background-brand-default: #FBC1D6;
+
+
+  --sds-typography-body-font-family: "Punk Kid", Times, sans-serif;
+
+
+}
