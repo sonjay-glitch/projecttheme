@@ -1,8 +1,8 @@
 /*
  * Header
  */
-header {
-  background-color: white;
+.site-header {
+  background-color: var(--sds-color-background-default-default);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,9 +16,9 @@ header {
 
 
 @media (min-width: 767px) {
-  header {
+  .site-header {
     position: relative;
-  padding: 2rem 3rem;
+    padding: 2rem 3rem;
   }
 }
 
@@ -35,5 +35,106 @@ header {
 @media (min-width: 767px) {
   .site-logo {
     width: min(100%, 283px);
+  }
+}
+
+.header-module {
+  background-color: #252c43;
+  color: #fff;
+  width: 100%;
+}
+
+.header-module__inner {
+  min-height: 109px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4.5rem);
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 3.4vw, 3.5rem);
+}
+
+.header-module__brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 54px;
+  height: 54px;
+}
+
+.header-module__brand img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.header-module__brand-fallback {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-family: "Punk Kid", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.header-module__nav {
+  min-width: 0;
+}
+
+.header-module__menu {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 5rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-module__menu a,
+.header-module__menu li > a {
+  display: block;
+  color: #fff;
+  font-family: "Punk Kid", "Special Elite Regular", sans-serif;
+  font-size: clamp(1.05rem, 1.35vw, 1.35rem);
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-module__menu a:hover,
+.header-module__menu a:focus {
+  color: var(--theme-color-primary);
+}
+
+@media (max-width: 767px) {
+  .header-module__inner {
+    min-height: 88px;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .header-module__brand,
+  .header-module__brand img,
+  .header-module__brand-fallback {
+    width: 46px;
+    height: 46px;
+  }
+
+  .header-module__menu {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem 1rem;
+  }
+
+  .header-module__menu a,
+  .header-module__menu li > a {
+    font-size: 0.85rem;
   }
 }
