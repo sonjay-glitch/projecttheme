@@ -264,6 +264,7 @@
   --scale-08: 3rem;
   --scale-09: 4rem;
   --scale-10: 4.5rem;
+  --scale-11: 5.5rem;
   --weight-thin: 100;
   --weight-extra-light: 200;
   --weight-light: 300;
@@ -306,7 +307,7 @@
   --heading-font-weight: var(--weight-semibold);
   --subheading-size-small: var(--scale-07);
   --subheading-size-medium: var(--scale-08);
-  --subheading-size-large: var(--scale-09);
+  --subheading-size-large: var(--scale-11);
   --subheading-font-weight: var(--weight-regular);
   --subtitle-size-small: var(--scale-05);
   --subtitle-size-base: var(--scale-06);
@@ -329,53 +330,4 @@
   --title-page-font-family: var(--family-sans);
 }
 
-/* Theme semantic variables */
-:root {
-  --theme-color-primary: var(--brand-200);
-  --theme-color-secondary: var(--gray-900);
-  --theme-color-tertiary: var(--brand-800);
-  --theme-color-accent: var(--brand-200);
-  --theme-color-accent-2: var(--brand-800);
-  --theme-color-body: var(--gray-800);
-
-  --header-color-background: var(--blue-1000);
-  --hero-color-navy: var(--blue-1000);
-  --hero-color-bronze: var(--brand-800);
-  --hero-color-white: var(--white-1000);
-
-  --typography-body-font-family: var(--body-font-family);
-  --typography-title-hero-font-family: var(--family-sans);
-  --typography-subheading-font-family: var(--family-mono);
-  --hero-typography-copy: var(--family-serif);
-
-  --size-space-4000: 160px;
-  --size-space-1600: 64px;
-  --hero-size-padding-y: 160px;
-  --hero-size-padding-x: 64px;
-  --hero-size-text-width: 461px;
-  --hero-size-text-offset: 263px;
-
-  --about-color-background: var(--gray-700);
-  --about-color-text: var(--white-1000);
-  --about-color-accent: var(--brand-200);
-  --about-size-frame-width: 1440px;
-  --about-size-padding-x: 64px;
-  --about-size-padding-y: 64px;
-  --about-size-image-width: 380px;
-  --about-size-content-width: 600px;
-  --about-size-column-gap: 64px;
-
-  --typography-title-hero-size: 72px;
-  --typography-second-title-hero-size: 96px;
-  --hero-body-size: var(--body-size-small);
-  --hero-title-size-mobile: 48px;
-  --hero-second-title-size-mobile: 34px;
-  --hero-body-size-mobile: var(--body-size-small);
-  --about-title-size: 40px;
-  --about-title-size-mobile: 36px;
-  --about-body-size: var(--body-size-medium);
-  --header-nav-size: clamp(1.05rem, 1.35vw, 1.35rem);
-  --header-nav-size-mobile: 0.85rem;
-  --about-punk-body-size-mobile: 0.95rem;
-}
 

@@ -7,19 +7,26 @@
 
 #site-navigation {
   position: relative;
+  flex: 1;
 }
 
 #site-navigation .main-menu {
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
   padding: 0;
   margin: 0;
-  gap: 20px;
+}
+
+#site-navigation .main-menu li a {
+  display: block;
+  text-align: center;
 }
 
 #site-navigation .main-menu li a:hover,
 #menu-footer li a:hover {
-  color: var(--theme-color-primary);
+  color: var(--brand-200);
   transition: color 0.3s ease-in-out;
 }
 
@@ -119,6 +126,7 @@
   }
 
   #site-navigation .main-menu {
+    display: flex;
     flex-direction: column;
     gap: 0;
     padding-top: 1rem;
