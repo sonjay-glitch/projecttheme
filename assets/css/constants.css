@@ -153,7 +153,7 @@
   --background-warning-secondary-hover: var(--yellow-300);
   --background-warning-tertiary: var(--yellow-100);
   --background-warning-tertiary-hover: var(--yellow-200);
-  --border-brand-default: var(--brand-800);
+  --border-brand-default: var(--brand-200);
   --border-brand-secondary: var(--brand-600);
   --border-brand-tertiary: var(--brand-500);
   --border-danger-default: var(--red-700);

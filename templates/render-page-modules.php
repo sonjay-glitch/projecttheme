@@ -12,7 +12,7 @@ while (have_rows('page_modules')) : the_row();
 
   // Section-Optionen 
   $row_layout = get_row_layout();
-  $full_width_layout = in_array($row_layout, ['hero_basic', 'image_left_text_right', 'concerts'], true);
+  $full_width_layout = in_array($row_layout, ['hero_basic', 'image_left_text_right', 'concerts', 'club_events'], true);
   $opts = [
     'name'       => $row_layout,
     'container'  => $full_width_layout ? 'none' : (get_sub_field('container') ?: 'container-lg'),
@@ -40,6 +40,9 @@ while (have_rows('page_modules')) : the_row();
 
     case 'concerts':
       get_template_part('template-parts/flex/layout', 'concerts'); break;
+
+    case 'club_events':
+      get_template_part('template-parts/flex/layout', 'club-events'); break;
 
     case 'hero_basic':
       get_template_part('template-parts/flex/layout', 'hero-basic'); break;
