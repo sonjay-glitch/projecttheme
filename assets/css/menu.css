@@ -44,7 +44,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: white;
+    background: var(--white-1000);
   }
 
   .menu-toggle {

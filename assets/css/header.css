@@ -39,8 +39,8 @@
 }
 
 .header-module {
-  background-color: #252c43;
-  color: #fff;
+  background-color: var(--header-color-background);
+  color: var(--hero-color-white);
   width: 100%;
 }
 
@@ -74,7 +74,7 @@
   place-items: center;
   width: 54px;
   height: 54px;
-  border: 2px solid #fff;
+  border: 2px solid var(--hero-color-white);
   border-radius: 50%;
   font-family: "Punk Kid", sans-serif;
   font-size: 1.5rem;
@@ -98,7 +98,7 @@
 .header-module__menu a,
 .header-module__menu li > a {
   display: block;
-  color: #fff;
+  color: var(--hero-color-white);
   font-family: "Punk Kid", "Special Elite Regular", sans-serif;
   font-size: clamp(1.05rem, 1.35vw, 1.35rem);
   line-height: 1;

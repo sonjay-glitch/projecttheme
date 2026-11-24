@@ -12,10 +12,11 @@ while (have_rows('page_modules')) : the_row();
 
   // Section-Optionen 
   $row_layout = get_row_layout();
+  $full_width_layout = in_array($row_layout, ['hero_basic', 'image_left_text_right'], true);
   $opts = [
     'name'       => $row_layout,
-    'container'  => $row_layout === 'hero_basic' ? 'none' : (get_sub_field('container') ?: 'container-lg'),
-    'padding_y'  => $row_layout === 'hero_basic' ? 'py-0' : (get_sub_field('padding_y') ?: 'py-5'),
+    'container'  => $full_width_layout ? 'none' : (get_sub_field('container') ?: 'container-lg'),
+    'padding_y'  => $full_width_layout ? 'py-0' : (get_sub_field('padding_y') ?: 'py-5'),
     'bg'         => get_sub_field('background') ?: 'none',
     'id'         => get_sub_field('id-anchor') ?: '',
     'show_on'    => get_sub_field('show-on') ?: 'everywhere',
