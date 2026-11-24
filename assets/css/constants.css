@@ -340,22 +340,16 @@
 
   --header-color-background: var(--blue-1000);
   --hero-color-navy: var(--blue-1000);
-  --hero-color-pink: var(--brand-200);
   --hero-color-bronze: var(--brand-800);
   --hero-color-white: var(--white-1000);
 
-  --sds-color-background-default-default: var(--gray-800);
-  --sds-color-text-default-default: var(--white-1000);
-  --sds-color-text-brand-on-brand: var(--brand-800);
-  --sds-color-background-brand-default: var(--brand-200);
-  --sds-color-background-default-secondary: var(--gray-700);
-
-  --sds-typography-body-font-family: var(--body-font-family);
-  --hero-typography-display: var(--family-mono);
+  --typography-body-font-family: var(--body-font-family);
+  --typography-title-hero-font-family: var(--family-sans);
+  --typography-subheading-font-family: var(--family-mono);
   --hero-typography-copy: var(--family-serif);
 
-  --sds-size-space-4000: 160px;
-  --sds-size-space-1600: 64px;
+  --size-space-4000: 160px;
+  --size-space-1600: 64px;
   --hero-size-padding-y: 160px;
   --hero-size-padding-x: 64px;
   --hero-size-text-width: 461px;
@@ -371,8 +365,8 @@
   --about-size-content-width: 600px;
   --about-size-column-gap: 64px;
 
-  --hero-title-size: 64px;
-  --hero-second-title-size: 48px;
+  --typography-title-hero-size: 72px;
+  --typography-second-title-hero-size: 96px;
   --hero-body-size: var(--body-size-small);
   --hero-title-size-mobile: 48px;
   --hero-second-title-size-mobile: 34px;

@@ -35,7 +35,7 @@
   overflow: hidden;
   box-sizing: border-box;
   padding: var(--hero-size-padding-y) var(--hero-size-padding-x);
-  background: var(--sds-color-background-default-secondary);
+  background: var(--background-default-secondary);
   color: var(--hero-color-white);
 }
 
@@ -54,24 +54,23 @@
 }
 
 .hero-basic__title {
-  margin: 0;
-  color: var(--hero-color-white);
-  font-family: var(--hero-typography-display);
-  font-size: var(--hero-title-size);
-  font-weight: var(--title-hero-font-weight);
-  line-height: 72px;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 0 var(--blue-1000);
+  color: var(--text-default-default);
+  font-family: var(--typography-title-hero-font-family);
+  font-size: var(--typography-title-hero-size);
+  font-style: normal;
+  font-weight: var(--typography-title-hero-font-weight);
+  line-height: 120%; /* 86.4px */
+  letter-spacing: 2.16px;
 }
 
 .hero-basic__second-title {
-  margin: 8px 0 0;
-  color: var(--hero-color-pink);
-  font-family: var(--hero-typography-display);
-  font-size: var(--hero-second-title-size);
-  font-weight: var(--title-hero-font-weight);
-  line-height: 56px;
-  text-transform: uppercase;
+  color: var(--text-default-secondary);
+  font-family: var(--typography-subheading-font-family);
+  font-size: var(--typography-second-title-hero-size);
+  font-style: normal;
+  font-weight: var(--typography-heading-font-weight);
+  line-height: 62%; /* 59.52px */
+  letter-spacing: 1.44px;
 }
 
 .hero-basic__text {
@@ -124,7 +123,10 @@
   width: 100%;
   min-height: 360px;
   display: grid;
-  grid-template-columns: var(--about-size-image-width) minmax(0, var(--about-size-content-width));
+  grid-template-columns: var(--about-size-image-width) minmax(
+      0,
+      var(--about-size-content-width)
+    );
   align-items: center;
   justify-content: center;
   column-gap: var(--about-size-column-gap);
@@ -192,7 +194,9 @@
   font-family: var(--subtitle-font-family);
   font-size: var(--body-size-small);
   line-height: 1;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
 }
 
 .about-section__cta:hover,
@@ -202,7 +206,9 @@
 }
 
 .about-section--whats-on {
-  grid-template-columns: minmax(0, var(--about-size-content-width)) var(--about-size-image-width);
+  grid-template-columns: minmax(0, var(--about-size-content-width)) var(
+      --about-size-image-width
+    );
   justify-content: center;
 }
 

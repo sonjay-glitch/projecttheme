@@ -34,7 +34,7 @@ body {
   font-size: var(--body-size-medium);
   font-weight: var(--body-font-weight-regular);
   line-height: 1.5;
-  color: var(--sds-color-text-default-default);
+  color: var(--text-default-default);
 }
 
 a,

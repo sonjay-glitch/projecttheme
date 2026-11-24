@@ -2,7 +2,7 @@
  * Header
  */
 .site-header {
-  background-color: var(--sds-color-background-default-default);
+  background-color: var(--background-default-default);
   display: flex;
   justify-content: space-between;
   align-items: center;
