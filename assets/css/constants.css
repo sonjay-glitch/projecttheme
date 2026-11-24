@@ -30,4 +30,8 @@
 
   --sds-size-space-4000: 160px;
   --sds-size-space-1600: 64px;
+  --hero-size-padding-y: 160px;
+  --hero-size-padding-x: 64px;
+  --hero-size-text-width: 461px;
+  --hero-size-text-offset: 263px;
 }
