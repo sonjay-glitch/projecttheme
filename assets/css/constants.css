@@ -10,14 +10,24 @@
   --theme-color-accent: #FBC1D6;
   --theme-color-accent-2: #DBAC84;
   --theme-color-body: #2C2C2C;
+  --hero-color-navy: #252C43;
+  --hero-color-pink: #FBC1D6;
+  --hero-color-bronze: #DBAC84;
+  --hero-color-white: #FFFFFF;
+  
 
   --sds-color-background-default-default: #2C2C2C; 
   --sds-color-text-default-default: #FFFFFF;
   --sds-color-text-brand-on-brand: #DBAC84;
   --sds-color-background-brand-default: #FBC1D6;
+  --sds-color-background-default-secondary: #383838;
 
 
   --sds-typography-body-font-family: "Punk Kid", Times, sans-serif;
+  --hero-typography-display: "Dystopian Canticle Regular", "Punk Kid", serif;
+  --hero-typography-copy: "Special Elite Regular", Georgia, serif;
 
 
+  --sds-size-space-4000: 160px;
+  --sds-size-space-1600: 64px;
 }
