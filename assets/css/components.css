@@ -57,8 +57,8 @@
   margin: 0;
   color: var(--hero-color-white);
   font-family: var(--hero-typography-display);
-  font-size: 64px;
-  font-weight: 700;
+  font-size: var(--hero-title-size);
+  font-weight: var(--title-hero-font-weight);
   line-height: 72px;
   text-transform: uppercase;
   text-shadow: 3px 3px 0 var(--blue-1000);
@@ -68,8 +68,8 @@
   margin: 8px 0 0;
   color: var(--hero-color-pink);
   font-family: var(--hero-typography-display);
-  font-size: 48px;
-  font-weight: 700;
+  font-size: var(--hero-second-title-size);
+  font-weight: var(--title-hero-font-weight);
   line-height: 56px;
   text-transform: uppercase;
 }
@@ -80,7 +80,7 @@
   margin: 64px 0 0 var(--hero-size-text-offset);
   color: var(--hero-color-white);
   font-family: var(--hero-typography-copy);
-  font-size: 14px;
+  font-size: var(--hero-body-size);
   line-height: 20px;
 }
 
@@ -99,13 +99,13 @@
   }
 
   .hero-basic__title {
-    font-size: 48px;
+    font-size: var(--hero-title-size-mobile);
     line-height: 52px;
   }
 
   .hero-basic__second-title {
     margin-top: 8px;
-    font-size: 34px;
+    font-size: var(--hero-second-title-size-mobile);
     line-height: 40px;
   }
 
@@ -113,7 +113,7 @@
     width: 100%;
     max-width: 100%;
     margin: 48px 0 0;
-    font-size: 13px;
+    font-size: var(--hero-body-size-mobile);
     line-height: 18px;
   }
 }
@@ -158,8 +158,9 @@
 .about-section__title {
   margin: 0 0 20px;
   color: var(--about-color-text);
-  font-family: "Punk Kid", sans-serif;
-  font-size: 40px;
+  font-family: var(--heading-font-family);
+  font-size: var(--about-title-size);
+  font-weight: var(--heading-font-weight);
   line-height: 1;
   text-transform: uppercase;
 }
@@ -168,8 +169,8 @@
   max-width: 540px;
   margin: 0;
   color: var(--about-color-text);
-  font-family: "Special Elite Regular", serif;
-  font-size: 16px;
+  font-family: var(--body-font-family);
+  font-size: var(--about-body-size);
   line-height: 1.35;
 }
 
@@ -188,8 +189,8 @@
   border-radius: 999px;
   background: var(--about-color-accent);
   color: var(--theme-color-secondary);
-  font-family: "Punk Kid", sans-serif;
-  font-size: 14px;
+  font-family: var(--subtitle-font-family);
+  font-size: var(--body-size-small);
   line-height: 1;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -198,6 +199,51 @@
 .about-section__cta:focus {
   background: var(--about-color-text);
   color: var(--theme-color-secondary);
+}
+
+.about-section--whats-on {
+  grid-template-columns: minmax(0, var(--about-size-content-width)) var(--about-size-image-width);
+  justify-content: center;
+}
+
+.about-section--whats-on .about-section__content {
+  align-self: center;
+}
+
+.about-section--whats-on .about-section__title {
+  margin-bottom: 24px;
+  font-family: var(--heading-font-family);
+  font-size: var(--about-title-size);
+  line-height: 1;
+}
+
+.about-section__events {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-section__event {
+  max-width: 540px;
+}
+
+.about-section__event-title {
+  margin: 0 0 4px;
+  color: var(--about-color-text);
+  font-family: var(--body-font-family);
+  font-size: var(--body-size-medium);
+  font-weight: var(--body-font-weight-strong);
+  line-height: 1.2;
+}
+
+.about-section--whats-on .about-section__text {
+  max-width: 540px;
+  font-size: var(--body-size-small);
+  line-height: 1.35;
+}
+
+.about-section--whats-on .about-section__cta {
+  margin-top: 24px;
 }
 
 @media (max-width: 767px) {
@@ -215,11 +261,23 @@
   }
 
   .about-section__title {
-    font-size: 36px;
+    font-size: var(--about-title-size-mobile);
   }
 
   .about-section__text {
     max-width: 100%;
+  }
+
+  .about-section--whats-on {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .about-section--whats-on .about-section__image {
+    grid-row: 1;
+  }
+
+  .about-section--whats-on .about-section__content {
+    grid-row: 2;
   }
 }
 
@@ -257,7 +315,7 @@
 .about-punk__title {
   grid-area: title;
   margin: 0;
-  font-family: "Punk Kid", sans-serif;
+  font-family: var(--heading-font-family);
   font-size: clamp(4rem, 9vw, 9rem);
   line-height: 0.9;
   text-transform: uppercase;
@@ -277,7 +335,7 @@
 
 .about-punk__intro,
 .about-punk__text {
-  font-family: "Special Elite Regular", serif;
+  font-family: var(--body-font-family);
   font-size: clamp(1rem, 1.5vw, 1.4rem);
   line-height: 1.35;
 }
@@ -291,7 +349,7 @@
   grid-area: tagline;
   margin: 0;
   color: var(--theme-color-primary);
-  font-family: "Dystopian Canticle Regular", serif;
+  font-family: var(--subheading-font-family);
   font-size: clamp(1.25rem, 2vw, 2rem);
   line-height: 1.15;
   text-align: center;
@@ -328,6 +386,6 @@
 
   .about-punk__intro,
   .about-punk__text {
-    font-size: 0.95rem;
+    font-size: var(--about-punk-body-size-mobile);
   }
 }

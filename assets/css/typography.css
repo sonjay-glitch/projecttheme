@@ -30,8 +30,9 @@ body {
 }
 
 body {
-  font-family: var(--sds-typography-body-font-family);
-  font-size: 1.6rem;
+  font-family: var(--body-font-family);
+  font-size: var(--body-size-medium);
+  font-weight: var(--body-font-weight-regular);
   line-height: 1.5;
   color: var(--sds-color-text-default-default);
 }
@@ -54,7 +55,7 @@ a:active {
 }
 
 .intro-text {
-  font-size: 1.6rem;
+  font-size: var(--body-size-medium);
   line-height: 1.5;
   margin-bottom: 2rem;
 }

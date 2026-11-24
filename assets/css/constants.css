@@ -3,7 +3,6 @@
  *
  * Keep colors and reusable theme values here.
  */
-/*:root {
 /* Color Primitives */
 :root {
   /* Value */
@@ -249,34 +248,111 @@
   --text-warning-on-warning-tertiary: var(--yellow-900);
   --text-warning-secondary: var(--yellow-700);
   --text-warning-tertiary: var(--yellow-600);
-  /
 }
 
-/*
+/* Typography Primitives */
+:root {
+  /* Default */
+  /* number */
+  --scale-01: 0.75rem;
+  --scale-02: 0.875rem;
+  --scale-03: 1rem;
+  --scale-04: 1.25rem;
+  --scale-05: 1.5rem;
+  --scale-06: 2rem;
+  --scale-07: 2.5rem;
+  --scale-08: 3rem;
+  --scale-09: 4rem;
+  --scale-10: 4.5rem;
+  --weight-thin: 100;
+  --weight-extra-light: 200;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extra-bold: 800;
+  --weight-black: 900;
+  /* string */
+  --family-mono: "Dystopian Canticle Regular";
+  --family-sans: "Punk Kid";
+  --family-serif: "Special Elite Regular";
+  --weight-black-italic: Black Italic;
+  --weight-bold-italic: Bold Italic;
+  --weight-extra-bold-italic: Extra Bold Italic;
+  --weight-extralight-italic: Extra Light Italic;
+  --weight-light-italic: Light Italic;
+  --weight-medium-italic: Medium Italic;
+  --weight-regular-italic: Italic;
+  --weight-semibold-italic: Semi Bold Italic;
+  --weight-thin-italic: Thin Italic;
+}
+/* Typography */
+:root {
+  /* Mode 1 */
+  /* number */
+  --body-size-small: var(--scale-02);
+  --body-size-medium: var(--scale-03);
+  --body-size-large: var(--scale-04);
+  --body-font-weight-regular: var(--weight-regular);
+  --body-font-weight-strong: var(--weight-semibold);
+  --code-size-small: var(--body-size-small);
+  --code-size-base: var(--body-size-medium);
+  --code-size-large: var(--body-size-large);
+  --code-font-weight: var(--body-font-weight-regular);
+  --heading-size-small: var(--scale-04);
+  --heading-size-base: var(--scale-05);
+  --heading-size-large: var(--scale-06);
+  --heading-font-weight: var(--weight-semibold);
+  --subheading-size-small: var(--scale-07);
+  --subheading-size-medium: var(--scale-08);
+  --subheading-size-large: var(--scale-09);
+  --subheading-font-weight: var(--weight-regular);
+  --subtitle-size-small: var(--scale-05);
+  --subtitle-size-base: var(--scale-06);
+  --subtitle-size-large: var(--scale-07);
+  --subtitle-font-weight: var(--weight-regular);
+  --title-hero-size: var(--scale-10);
+  --title-hero-font-weight: var(--weight-bold);
+  --title-page-size-small: var(--scale-07);
+  --title-page-size-base: var(--scale-08);
+  --title-page-size-large: var(--scale-09);
+  --title-page-font-weight: var(--weight-bold);
+  /* string */
+  --body-font-family: var(--family-serif);
+  --body-font-style-italic: var(--weight-regular-italic);
+  --code-font-family: var(--family-mono);
+  --heading-font-family: var(--family-sans);
+  --subheading-font-family: var(--family-mono);
+  --subtitle-font-family: var(--family-sans);
+  --title-hero-font-family: var(--family-sans);
+  --title-page-font-family: var(--family-sans);
+}
 
-  --theme-color-primary: #FBC1D6;
-  --theme-color-secondary: #1f2020;
-  --theme-color-tertiary: #DBAC84;
-  --theme-color-accent: #FBC1D6;
-  --theme-color-accent-2: #DBAC84;
-  --theme-color-body: #2C2C2C;
-  --hero-color-navy: #252C43;
-  --hero-color-pink: #FBC1D6;
-  --hero-color-bronze: #DBAC84;
-  --hero-color-white: #FFFFFF;
-  
+/* Theme semantic variables */
+:root {
+  --theme-color-primary: var(--brand-200);
+  --theme-color-secondary: var(--gray-900);
+  --theme-color-tertiary: var(--brand-800);
+  --theme-color-accent: var(--brand-200);
+  --theme-color-accent-2: var(--brand-800);
+  --theme-color-body: var(--gray-800);
 
-  --sds-color-background-default-default: #2C2C2C; 
-  --sds-color-text-default-default: #FFFFFF;
-  --sds-color-text-brand-on-brand: #DBAC84;
-  --sds-color-background-brand-default: #FBC1D6;
-  --sds-color-background-default-secondary: #383838;
+  --header-color-background: var(--blue-1000);
+  --hero-color-navy: var(--blue-1000);
+  --hero-color-pink: var(--brand-200);
+  --hero-color-bronze: var(--brand-800);
+  --hero-color-white: var(--white-1000);
 
+  --sds-color-background-default-default: var(--gray-800);
+  --sds-color-text-default-default: var(--white-1000);
+  --sds-color-text-brand-on-brand: var(--brand-800);
+  --sds-color-background-brand-default: var(--brand-200);
+  --sds-color-background-default-secondary: var(--gray-700);
 
-  --sds-typography-body-font-family: "Punk Kid", Times, sans-serif;
-  --hero-typography-display: "Dystopian Canticle Regular", "Punk Kid", serif;
-  --hero-typography-copy: "Special Elite Regular", Georgia, serif;
-
+  --sds-typography-body-font-family: var(--body-font-family);
+  --hero-typography-display: var(--family-mono);
+  --hero-typography-copy: var(--family-serif);
 
   --sds-size-space-4000: 160px;
   --sds-size-space-1600: 64px;
@@ -285,13 +361,27 @@
   --hero-size-text-width: 461px;
   --hero-size-text-offset: 263px;
 
-  --about-color-background: #383838;
-  --about-color-text: #FFFFFF;
-  --about-color-accent: #FBC1D6;
+  --about-color-background: var(--gray-700);
+  --about-color-text: var(--white-1000);
+  --about-color-accent: var(--brand-200);
   --about-size-frame-width: 1440px;
   --about-size-padding-x: 64px;
   --about-size-padding-y: 64px;
   --about-size-image-width: 380px;
   --about-size-content-width: 600px;
   --about-size-column-gap: 64px;
+
+  --hero-title-size: 64px;
+  --hero-second-title-size: 48px;
+  --hero-body-size: var(--body-size-small);
+  --hero-title-size-mobile: 48px;
+  --hero-second-title-size-mobile: 34px;
+  --hero-body-size-mobile: var(--body-size-small);
+  --about-title-size: 40px;
+  --about-title-size-mobile: 36px;
+  --about-body-size: var(--body-size-medium);
+  --header-nav-size: clamp(1.05rem, 1.35vw, 1.35rem);
+  --header-nav-size-mobile: 0.85rem;
+  --about-punk-body-size-mobile: 0.95rem;
 }
+

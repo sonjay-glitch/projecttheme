@@ -907,6 +907,116 @@
                             "delay": 0
                         },
                         {
+                            "key": "field_iltr_variant",
+                            "label": "Layout",
+                            "name": "layout_variant",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "about": "About",
+                                "whats_on_today": "What's on Today"
+                            },
+                            "default_value": "about",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_iltr_subheadline",
+                            "label": "Erste Event-Überschrift",
+                            "name": "subheadline",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_iltr_variant",
+                                        "operator": "==",
+                                        "value": "whats_on_today"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_iltr_secondary_headline",
+                            "label": "Zweite Event-Überschrift",
+                            "name": "secondary_headline",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_iltr_variant",
+                                        "operator": "==",
+                                        "value": "whats_on_today"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_iltr_secondary_text",
+                            "label": "Zweiter Event-Text",
+                            "name": "secondary_text",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_iltr_variant",
+                                        "operator": "==",
+                                        "value": "whats_on_today"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "default_value": "",
+                            "delay": 0
+                        },
+                        {
                             "key": "field_iltr_cta",
                             "label": "CTA",
                             "name": "cta",
@@ -1867,5 +1977,5 @@
             "json"
         ]
     },
-    "modified": 1795531844
+    "modified": 1795533328
 }
